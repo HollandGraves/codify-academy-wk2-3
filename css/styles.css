@@ -1,0 +1,171 @@
+/*
+    TABLE OF CONTENTS:
+    1. PAGE CONTAINER / GENERAL STYLES
+    2. HEADER
+    3. CONTENT WRAPPER
+    4. GENERAL INFO
+    5. SHORT TAKEAWAY INFO
+    6. PICTURE SHOWCASE
+    7. CONTACT FORM
+    8. FOOTER
+
+*/
+
+
+
+
+
+/* 1. PAGE CONTAINER / GENERAL STYLES
+---------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#container-page {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* 2. HEADER
+---------------------------------*/
+
+header {
+    background-color: #F6F9F9;
+    display: flex;
+}
+
+header img {
+    align-self: center;
+    padding: 25px 100px;
+}
+
+
+
+
+/* 3. CONTENT WRAPPER
+---------------------------------*/
+
+#wrapper-content {
+    height: 800px;
+    width: auto;
+    
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+
+    background-image: url("../images/bg1.png");
+    background-color: #575d6d;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#container-content {
+    width: 750px;
+    text-align: center;
+}
+
+#container-content h1 {
+    color: white;
+    font-size: 110px;
+    font-weight: 600;
+    line-height: 150px;
+    padding-top: 180px;
+    border-bottom: 1px solid #15A4FA;
+}
+
+#container-content h4 {
+    padding: 30px;
+    color: white;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+#container-content #link-content {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    line-height: 32px;
+    padding: 10px 16px;
+
+    border-top: 1px solid #15A4FA;
+    border-left: 1px solid #15A4FA;
+    border-bottom: transparent;
+    border-right: transparent;
+    border-radius: 2px;
+}
+
+#container-content #link-content:hover {
+    cursor: pointer;
+}
+
+#container-content #link-content:active {
+    border: 1px solid #15A4FA;
+}
+
+.fa-chevron-down {
+    color: white;
+    margin: 105px;
+    flex-basis: 40px;
+}
+
+
+
+
+/* 4. GENERAL INFO
+---------------------------------*/
+
+#info {
+    height: 330px;
+    background-color: #F6F9F9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#info h3 {
+    color: #2D3950;
+    font-size: 44px;
+    font-weight: 300;
+    padding-top: 90px;
+}
+
+#info p {
+    padding: 20px 270px 40px;
+    line-height: 38px;
+    color: #9999A5;
+    font-size: 17px;
+}
+
+
+
+
+/* 5. SHORT TAKEAWAY INFO
+---------------------------------*/
+
+#takeaways {
+    height: 400px;
+    background-color: white;
+    padding: 85px;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper-info-fa {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(90deg, #1E5799 0%, #207BC8 50%, #2C8BD8 50%, #79B7E7 100%);
+}
+
+.wrapper-info-fa .fas {
+    color: white;
+    padding: 25px;
+}
