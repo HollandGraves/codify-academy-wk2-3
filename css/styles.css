@@ -16,6 +16,7 @@
 
 
 /* 1. PAGE CONTAINER / GENERAL STYLES
+---------------------------------
 ---------------------------------*/
 
 * {
@@ -33,6 +34,7 @@
 
 
 /* 2. HEADER
+---------------------------------
 ---------------------------------*/
 
 header {
@@ -49,6 +51,7 @@ header img {
 
 
 /* 3. CONTENT WRAPPER
+---------------------------------
 ---------------------------------*/
 
 #wrapper-content {
@@ -119,10 +122,11 @@ header img {
 
 
 /* 4. GENERAL INFO
+---------------------------------
 ---------------------------------*/
 
 #info {
-    height: 330px;
+    height: 300px;
     background-color: #F6F9F9;
     text-align: center;
     display: flex;
@@ -131,41 +135,232 @@ header img {
 
 #info h3 {
     color: #2D3950;
-    font-size: 44px;
+    font-size: 38px;
     font-weight: 300;
     padding-top: 90px;
 }
 
 #info p {
-    padding: 20px 270px 40px;
-    line-height: 38px;
+    padding: 20px 290px 40px;
+    line-height: 34px;
     color: #9999A5;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 
 
 
 /* 5. SHORT TAKEAWAY INFO
+---------------------------------
 ---------------------------------*/
 
+/* id container for whole div */
 #takeaways {
     height: 400px;
     background-color: white;
-    padding: 85px;
     text-align: center;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
+/* class container for each chunk of info */
+.container-info {
+    padding: 90px 0px 110px;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-basis: 23%;
+    
+}
+
+/* symbol wrapper */
 .wrapper-info-fa {
     width: 100px;
     height: 100px;
+    margin-left: 120px;
+    margin-bottom: 20px;
     background-image: linear-gradient(90deg, #1E5799 0%, #207BC8 50%, #2C8BD8 50%, #79B7E7 100%);
 }
 
+/* symbol */
 .wrapper-info-fa .fas {
     color: white;
     padding: 25px;
+}
+
+/* local h4 */
+.container-info h4 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* local p */
+.container-info p {
+    color: #9999A5;
+    padding: 0px 10px;
+}
+
+
+
+
+/* 6. PICTURE SHOWCASE
+---------------------------------
+---------------------------------*/
+
+#pic-showcase {
+    height: 860px;
+    background-color: #F6F9F9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#pic-showcase h2 {
+    color: #2D3950;
+    font-size: 38px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#pic-showcase p {
+    color: #9999A5;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* container for pictures in #showcase div */
+#container-showcase-pic {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+}
+
+#container-showcase-pic a {
+    margin-top: 5%;
+}
+
+
+
+
+/* 7. CONTACT FORM STYLES
+---------------------------------
+---------------------------------*/
+
+#wrapper-form {
+    height: 700px;
+    background-image: url("../images/bg2.png");
+    background-color: #2a364b;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+}
+
+#container-form {
+    width: 410px;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+/* header */
+#container-form h2 {text-align: center;
+
+    color: white;
+    font-size: 38px;
+    font-weight: 400;
+    margin-top: 130px;
+    padding-bottom: 20px;
+}
+
+/* paragraph */
+#container-form p {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #939899;
+    font-size: 14px;
+}
+
+.form-input {
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #75756F;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+#wrapper-checkbox {
+    display: inline-block;
+    padding: 40px 60px;
+}
+
+/* styles div for submit button */
+#wrapper-submit {
+    display: inline-block;
+    border: 1px solid #15A4FA;
+    height: 35px;
+    width: 80px;
+    border-radius: 2px;
+}
+
+/* styles submit button */
+#wrapper-submit button {
+    background-color: transparent;
+    color: white;
+    height: 35px;
+    width: 80px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+
+/* 8. FOOTER STYLES
+---------------------------------
+---------------------------------*/
+
+footer {
+    height: 70px;
+    background-color: #F6F9F9;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    display: flex;
+    align-self: center;
+    font-size: 15px;
+    padding-left: 120px;
+}
+
+footer #social-media-sym {
+    display: flex;
+    align-self: center;
+
+    padding-top: 10px;
+    padding-right: 90px;
+}
+
+footer .fab {
+    color: white;
+    background-color: #15A4FA;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 2px;
 }

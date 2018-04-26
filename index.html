@@ -103,20 +103,73 @@
             <!--
 6.          PICTURE SHOWCASE
             -->
-            <div id="pic-showcase">
-
+            <div id="pic-showcase"> 
+                <!-- SECTION HEADER -->
+                <h2>Showcase your work like a pro.</h2>
+                <br />
+                <!-- SECTION PARAGRAPH -->
+                <p>Contact me if you like my work</p>
+                <!-- SECTION CONTAINER FOR PICS -->
+                <div id="container-showcase-pic">
+                    <a href="#"><img src="images/work6.png" alt="black bike on a street"></a>
+                    <a href="#"><img src="images/work2.png" alt="woman with glasses"></a>
+                    <a href="#"><img src="images/work3.png" alt="red coffee cups with smilie faces on them"></a>
+                    <a href="#"><img src="images/work4.png" alt="teal coffee up splashing coffee"></a>
+                    <a href="#"><img src="images/work5.png" alt="red bike in bike rack"></a>
+                    <a href="#"><img src="images/work6.png" alt="black bike on a street"></a>
+                </div>
             </div>
             <!--
 7.          CONTACT FORM
             -->
-            <div id="form">
-
+            <div id="wrapper-form">
+                <!-- wrapper-form for positioning -->
+                <div id="container-form">
+                    <!-- header -->
+                    <h2>Stay with us</h2>
+                    <!-- paragraph -->
+                    <p>We ensure quality & support</p>
+                    <!-- form begins -->
+                    <div id="form">
+                        <!-- form mails to email with subject and body -->
+                        <form id="contact" action="mailto:hgkombucha@gmail.com?Subject=New%20Subscriber&Body=This%20is%20Body" method="POST" target="_blank" >
+                            <!-- name and email input -->   
+                            <input class="form-input" type="text" name="fullname" placeholder="Full Name" />
+                            <br />
+                            <input class="form-input" type="text" name="email" placeholder="Email Address" />
+                            <br />
+                            <!-- textarea for message -->
+                            <textarea class="form-input" name="message" rows="6" cols="30">Message</textarea>
+                            <br />
+                            <!-- wrapper for checkbox to subscribe -->
+                            <div id="wrapper-checkbox">
+                                <!-- check box to subscribe -->
+                                <input type="checkbox" name="subscribe" value="subscribe" />
+                                Subscribe to Newsletter
+                            </div>
+                            <!-- wrapper for submit button -->
+                            <div id="wrapper-submit" >
+                                <button type="submit" form="contact" >Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
             <!--
 8.          FOOTER
             -->
             <footer>
-                
+                <!-- copyright -->
+                <p>
+                    &copy;Copyright 2015 STRICT
+                </p>
+                <div id="social-media-sym">
+                    <!-- social media symbols -->
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
             </footer>
         </div>
     </body>
