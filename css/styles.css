@@ -349,6 +349,7 @@ footer p {
     padding-left: 120px;
 }
 
+/* div container for social media symbols */
 footer #social-media-sym {
     display: flex;
     align-self: center;
@@ -357,6 +358,7 @@ footer #social-media-sym {
     padding-right: 90px;
 }
 
+/* styles for symbols themselves */
 footer .fab {
     color: white;
     background-color: #15A4FA;
